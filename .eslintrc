@@ -15,6 +15,7 @@
         "block-scoped-var": 2,
         "brace-style": [2, "1tbs", {"allowSingleLine": false}],
         "comma-style": [2, "last"],
+        "consistent-return": 2,
         "consistent-this": [0, "self"],
         "default-case": 2,
         "func-style": [2, "expression"],

@@ -7,10 +7,15 @@
     //
     // These rules are compatible with ESLint version 0.16.0 and up.
     // Detailed info about each of these rules can be found at http://eslint.org/docs/rules.
+    //
+    // "Objects" plugin source: https://github.com/davidwaterston/eslint-plugin-objects
 
     "env": {
         "node": true
     },
+    "plugins": [
+        "objects"
+    ],
     "rules": {
         "block-scoped-var": 2,
         "brace-style": [2, "1tbs", {"allowSingleLine": false}],
@@ -37,6 +42,7 @@
         "no-nested-ternary": 2,
         "no-process-env": 2,
         "no-reserved-keys": 2,
+        "no-return-assign": 2,
         "no-self-compare": 2,
         "no-shadow": 0,
         "no-sync": 2,
@@ -61,6 +67,12 @@
         "strict": [2, "global"],
         "vars-on-top": 2,
         "wrap-iife": [2, "outside"],
-        "wrap-regex": 2
+        "wrap-regex": 2,
+
+        // Custom rules
+        "objects/no-object-properties-first-line": 2,
+        "objects/no-object-properties-last-line": 2,
+        "objects/no-object-properties-one-line": 2,
+        "objects/no-object-property-split": 2
     }
 }
